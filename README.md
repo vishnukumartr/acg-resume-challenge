@@ -1,4 +1,4 @@
-# cgc-azure-resume-starter
+# agc-azure-resume-starter
 
 ## Prerequisites
 
