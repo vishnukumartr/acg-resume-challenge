@@ -3,10 +3,11 @@ window.addEventListener('DOMContentLoaded', (event) =>{
 })
 
 const localFunctionAppUrl = 'http://localhost:7071/api/GetResumeViewCounter';
+const azureFunctionAppUrl = 'https://az204functionappaug.azurewebsites.net/api/GetResumeViewCounter?code=R94iCIJSCspsj8K9o9acyeVskuSarVDaDC5EKbJdFrmbAzFux8Qu6Q==';
 
 const getVisitedCount = () => {
     let count = 30;
-    fetch(localFunctionAppUrl)
+    fetch(azureFunctionAppUrl)
     .then(response => {
         return response.json()
     }).then(response =>{
